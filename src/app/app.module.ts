@@ -20,7 +20,6 @@ import { SharedModule } from './shared/shared.module';
 
     /* My Stuff */
     AppRoutingModule
-  ],
-  bootstrap: [AppComponent]
+  ]
 })
 export class AppModule {}

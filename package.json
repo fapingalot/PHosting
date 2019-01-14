@@ -4,10 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:prod": "ng serve --prod",
     "build": "ng build",
+    "build:prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "server": "ng run phosting-client:server",
+    "server:prod": "ng run phosting-client:server --configuration production"
   },
   "private": true,
   "dependencies": {
@@ -16,9 +20,12 @@
     "@angular/compiler": "~7.2.0",
     "@angular/core": "~7.2.0",
     "@angular/forms": "~7.2.0",
+    "@angular/http": "^7.2.0",
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
+    "@angular/platform-server": "^7.2.0",
     "@angular/router": "~7.2.0",
+    "@nguniversal/module-map-ngfactory-loader": "^7.0.2",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
