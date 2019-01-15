@@ -1,13 +1,17 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { RootStoreModule } from './store';
+
 @NgModule({
   imports: [
     /* Angular Stuff */
-    CommonModule
+    CommonModule,
 
     /* 3rd Party */
+
     /* My Stuff */
+    RootStoreModule
   ],
   declarations: [],
   providers: [],
