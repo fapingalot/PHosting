@@ -11,7 +11,7 @@ import { of } from 'rxjs';
 export class TagsStoreEffects {
   constructor(private actions$: Actions) {}
 
-  @Effect() loadRequestEffect = this.actions$.pipe(
+  @Effect() loadRequestEffect$ = this.actions$.pipe(
     ofType(featureActions.ActionTypes.LOAD_REQUEST),
     startWith(new featureActions.LoadRequestAction()),
 
